@@ -4,7 +4,7 @@ Este repositório contém a documentação técnica completa para a RFP Malwee.
 
 ## Visualizar a Página
 
-Acesse: [https://SEU-USUARIO.github.io/rfp-malwee](https://SEU-USUARIO.github.io/rfp-malwee)
+Acesse: [https://gabdevbr.github.io/rfp-malwee](https://gabdevbr.github.io/rfp-malwee)
 
 ## Configuração do GitHub Pages
 
@@ -23,7 +23,7 @@ O GitHub Pages levará alguns minutos para fazer o build inicial. Você receber�
 
 ### Passo 3: Acessar
 
-Acesse através da URL: `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO`
+Acesse através da URL: `https://gabdevbr.github.io/rfp-malwee`
 
 ## Estrutura dos Arquivos
 
@@ -41,7 +41,7 @@ Acesse através da URL: `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO`
 Edite o arquivo `_config.yml` na raiz do projeto e altere:
 ```yaml
 baseurl: /rfp-malwee
-url: https://SEU-USUARIO.github.io
+url: https://gabdevbr.github.io
 ```
 
 ### Cores e Temas

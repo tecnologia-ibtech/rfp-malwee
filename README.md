@@ -8,7 +8,7 @@
 
 ## 🌐 Visualizar Online
 
-👉 **[Acesse a GitHub Page desta RFP](https://tecnologia-ibtech.github.io/rfp-malwee)** 
+👉 **[Acesse a GitHub Page desta RFP](https://gabdevbr.github.io/rfp-malwee)** 
 
 Uma página web interativa com toda a documentação, busca de tópicos e navegação facilitada.
 
@@ -67,7 +67,7 @@ A plataforma Geovendas é uma solução B2B especializada em gestão de vendas e
 Navegue pelos arquivos Markdown diretamente no GitHub para visualizar a documentação.
 
 ### Visualização Web
-Acesse a [GitHub Page](https://SEU-USUARIO.github.io/rfp-malwee) para uma experiência web completa com:
+Acesse a [GitHub Page](https://gabdevbr.github.io/rfp-malwee) para uma experiência web completa com:
 - Design responsivo e moderno
 - Busca em tempo real de tópicos
 - Navegação por categorias
