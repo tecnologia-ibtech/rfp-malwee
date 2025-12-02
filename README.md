@@ -6,6 +6,14 @@
 
 ---
 
+## 🌐 Visualizar Online
+
+👉 **[Acesse a GitHub Page desta RFP](https://tecnologia-ibtech.github.io/rfp-malwee)** 
+
+Uma página web interativa com toda a documentação, busca de tópicos e navegação facilitada.
+
+---
+
 ## Estrutura da Documentação
 
 Esta RFP está organizada em arquivos individuais por pergunta, facilitando navegação e versionamento. A documentação está dividida nas seguintes categorias:
@@ -52,6 +60,29 @@ Esta RFP está organizada em arquivos individuais por pergunta, facilitando nave
 ## Sobre a Plataforma Geovendas
 
 A plataforma Geovendas é uma solução B2B especializada em gestão de vendas e relacionamento comercial, com forte presença no mercado têxtil e vestuário brasileiro. A solução oferece capacidades completas de catálogo digital, gestão de pedidos, integração com sistemas ERP e portal de autoatendimento para representantes comerciais e clientes corporativos.
+
+## Como Usar Este Repositório
+
+### Navegação pelo GitHub
+Navegue pelos arquivos Markdown diretamente no GitHub para visualizar a documentação.
+
+### Visualização Web
+Acesse a [GitHub Page](https://SEU-USUARIO.github.io/rfp-malwee) para uma experiência web completa com:
+- Design responsivo e moderno
+- Busca em tempo real de tópicos
+- Navegação por categorias
+- Animações e interatividade
+
+### Configurar GitHub Pages
+
+1. Vá em **Settings** → **Pages**
+2. Em **Source**, selecione:
+   - Branch: `main`
+   - Folder: `/docs`
+3. Clique em **Save**
+4. Aguarde alguns minutos para o deploy
+
+Veja mais detalhes em [`docs/README.md`](./docs/README.md)
 
 ## Contato
 
