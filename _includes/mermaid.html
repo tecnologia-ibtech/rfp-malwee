@@ -1,0 +1,83 @@
+<!-- Mermaid.js initialization -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  
+  mermaid.initialize({ 
+    startOnLoad: true,
+    theme: 'default',
+    securityLevel: 'loose',
+    themeVariables: {
+      primaryColor: '#06f4e4',
+      primaryTextColor: '#434244',
+      primaryBorderColor: '#007a72',
+      lineColor: '#007a72',
+      secondaryColor: '#f9f9f9',
+      tertiaryColor: '#e2e8f0',
+      background: '#ffffff',
+      mainBkg: '#ffffff',
+      secondBkg: '#f9f9f9',
+      border1: '#007a72',
+      border2: '#06f4e4',
+      note: '#06f4e4',
+      noteBkgColor: '#f0fffe',
+      noteTextColor: '#434244',
+      noteBorderColor: '#06f4e4',
+      actorBkg: '#ffffff',
+      actorBorder: '#007a72',
+      actorTextColor: '#434244',
+      actorLineColor: '#007a72',
+      signalColor: '#434244',
+      signalTextColor: '#434244',
+      labelBoxBkgColor: '#06f4e4',
+      labelBoxBorderColor: '#007a72',
+      labelTextColor: '#434244',
+      loopTextColor: '#434244',
+      activationBkgColor: '#f0fffe',
+      activationBorderColor: '#007a72',
+      sequenceNumberColor: '#ffffff'
+    },
+    flowchart: {
+      useMaxWidth: true,
+      htmlLabels: true,
+      curve: 'basis',
+      padding: 15
+    },
+    sequence: {
+      useMaxWidth: true,
+      wrap: true,
+      width: 200
+    },
+    gantt: {
+      useMaxWidth: true
+    }
+  });
+  
+  // Force render on page load
+  window.addEventListener('load', () => {
+    mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  });
+</script>
+
+<style>
+  /* Mermaid diagram styling */
+  .mermaid {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  pre.mermaid {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  /* Ensure mermaid code blocks are rendered */
+  pre code.language-mermaid {
+    display: block;
+    background: transparent;
+  }
+</style>

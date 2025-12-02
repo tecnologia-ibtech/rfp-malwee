@@ -7,6 +7,8 @@ title: RFP Malwee - Resposta Técnica Completa
 {% include custom.css %}
 </style>
 
+{% include mermaid.html %}
+
 # RFP - Resposta Técnica Completa
 
 **Cliente:** Malwee  

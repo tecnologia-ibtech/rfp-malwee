@@ -5,3 +5,11 @@ theme: jekyll-theme-cayman
 markdown: kramdown
 baseurl: /rfp-malwee
 url: https://tecnologia-ibtech.github.io
+
+# Kramdown configuration
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
