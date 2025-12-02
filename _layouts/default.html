@@ -10,53 +10,59 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   
   <!-- Mermaid.js for diagram rendering -->
-  <script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    
-    mermaid.initialize({ 
-      startOnLoad: true,
-      theme: 'default',
-      securityLevel: 'loose',
-      themeVariables: {
-        primaryColor: '#e1f5fe',
-        primaryTextColor: '#434244',
-        primaryBorderColor: '#007a72',
-        lineColor: '#007a72',
-        secondaryColor: '#f9f9f9',
-        tertiaryColor: '#e2e8f0',
-        background: '#ffffff',
-        mainBkg: '#ffffff',
-        secondBkg: '#f9f9f9',
-        border1: '#007a72',
-        border2: '#06f4e4',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif'
-      },
-      flowchart: {
-        useMaxWidth: true,
-        htmlLabels: true,
-        curve: 'basis',
-        padding: 15,
-        nodeSpacing: 50,
-        rankSpacing: 50
-      }
-    });
-    
-    // Force render on page load
-    window.addEventListener('load', () => {
-      document.querySelectorAll('.language-mermaid').forEach((element) => {
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      mermaid.initialize({ 
+        startOnLoad: false,
+        theme: 'default',
+        securityLevel: 'loose',
+        themeVariables: {
+          primaryColor: '#e1f5fe',
+          primaryTextColor: '#434244',
+          primaryBorderColor: '#007a72',
+          lineColor: '#007a72',
+          secondaryColor: '#f9f9f9',
+          tertiaryColor: '#e2e8f0',
+          background: '#ffffff',
+          mainBkg: '#ffffff',
+          secondBkg: '#f9f9f9',
+          border1: '#007a72',
+          border2: '#06f4e4',
+          fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif'
+        },
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: 'basis',
+          padding: 15,
+          nodeSpacing: 50,
+          rankSpacing: 50
+        }
+      });
+      
+      // Convert code blocks to mermaid diagrams
+      document.querySelectorAll('pre > code.language-mermaid').forEach(function(element) {
         const code = element.textContent;
         const pre = element.parentElement;
         const container = document.createElement('div');
-        container.className = 'mermaid';
+        container.className = 'mermaid-diagram';
         container.textContent = code;
-        pre.replaceWith(container);
+        pre.parentNode.replaceChild(container, pre);
       });
-      mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+      
+      // Also handle any existing .mermaid divs
+      const elements = document.querySelectorAll('.mermaid, .mermaid-diagram');
+      if (elements.length > 0) {
+        mermaid.run({
+          nodes: elements
+        });
+      }
     });
   </script>
   
   <style>
-    .mermaid {
+    .mermaid, .mermaid-diagram {
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 0.5rem;
@@ -64,6 +70,11 @@
       margin: 2rem 0;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
+    }
+    
+    /* Hide the code block while Mermaid processes it */
+    pre:has(> code.language-mermaid) {
+      display: none;
     }
   </style>
 </head>
