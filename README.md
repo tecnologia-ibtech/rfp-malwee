@@ -67,22 +67,7 @@ A plataforma Geovendas é uma solução B2B especializada em gestão de vendas e
 Navegue pelos arquivos Markdown diretamente no GitHub para visualizar a documentação.
 
 ### Visualização Web
-Acesse a [GitHub Page](https://tecnologia-ibtech.github.io/rfp-malwee) para uma experiência web completa com:
-- Tema Jekyll Cayman profissional
-- Design responsivo e moderno
-- Navegação facilitada por categorias
-- Formatação otimizada para leitura
-
-### Configurar GitHub Pages
-
-1. Vá em **Settings** → **Pages**
-2. Em **Source**, selecione:
-   - Branch: `main`
-   - Folder: `/ (root)`
-3. Clique em **Save**
-4. Aguarde alguns minutos para o deploy
-
-O site é gerado automaticamente a partir do arquivo `index.md` usando Jekyll com o tema Cayman.
+Acesse a [GitHub Page](https://tecnologia-ibtech.github.io/rfp-malwee) 
 
 ## Contato
 
