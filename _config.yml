@@ -1,7 +1,7 @@
 # GitHub Pages Configuration
 title: RFP Malwee - Geovendas
 description: Resposta Técnica Completa da Geovendas para a RFP Malwee
-theme: null
+theme: jekyll-theme-cayman
 markdown: kramdown
 baseurl: /rfp-malwee
-url: https://gab.github.io
+url: https://tecnologia-ibtech.github.io

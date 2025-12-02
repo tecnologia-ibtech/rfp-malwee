@@ -1,0 +1,69 @@
+/* Custom CSS for RFP Malwee */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #2563eb;
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    color: #1e293b;
+    margin-top: 2rem;
+    border-left: 4px solid #2563eb;
+    padding-left: 1rem;
+}
+
+h3 {
+    color: #475569;
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #7c3aed;
+    text-decoration: underline;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+strong {
+    color: #1e293b;
+}
+
+code {
+    background: #f1f5f9;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+}
+
+blockquote {
+    border-left: 4px solid #f59e0b;
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: #64748b;
+    background: #fef3c7;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #e2e8f0;
+    margin: 2rem 0;
+}

@@ -1,0 +1,41 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom overrides for Cayman theme */
+.page-header {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+}
+
+.main-content {
+    h1, h2, h3, h4, h5, h6 {
+        color: #1e293b;
+    }
+    
+    h2 {
+        border-left: 4px solid #2563eb;
+        padding-left: 1rem;
+        margin-top: 2rem;
+    }
+    
+    a {
+        color: #2563eb;
+        
+        &:hover {
+            color: #7c3aed;
+        }
+    }
+    
+    code {
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+    }
+    
+    blockquote {
+        border-left: 4px solid #f59e0b;
+        background: #fef3c7;
+        padding: 1rem;
+        color: #92400e;
+    }
+}
